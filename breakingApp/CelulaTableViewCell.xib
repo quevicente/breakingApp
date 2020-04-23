@@ -92,6 +92,7 @@
             <viewLayoutGuide key="safeArea" id="y3c-4t-Cgi"/>
             <connections>
                 <outlet property="imagemPersonagem" destination="nAV-U4-wAH" id="D2A-DR-x7S"/>
+                <outlet property="labelData" destination="fKE-u9-XDx" id="WMH-Xk-7NI"/>
                 <outlet property="labelMensagemPersonagem" destination="hRq-3R-m76" id="lVD-gp-kDZ"/>
                 <outlet property="labelNomePersonagem" destination="7n0-Un-654" id="Lf8-O6-72x"/>
             </connections>

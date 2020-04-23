@@ -55,6 +55,7 @@ extension ViewController: UITableViewDataSource {
         
         cell.labelNomePersonagem.text = personagem.name
         cell.labelMensagemPersonagem.text = mensagem
+        cell.labelData.text = personagem.birthday
         
         if let url = URL(string: personagem.img) {
             cell.imagemPersonagem.setImage(url: url)

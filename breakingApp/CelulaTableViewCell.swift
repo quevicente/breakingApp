@@ -13,6 +13,7 @@ class CelulaTableViewCell: UITableViewCell {
     @IBOutlet weak var labelMensagemPersonagem: UILabel!
     @IBOutlet weak var labelNomePersonagem: UILabel!
     @IBOutlet weak var imagemPersonagem: UIImageView!
+    @IBOutlet weak var labelData: UILabel!
     
     override func prepareForReuse() {
         super.prepareForReuse()
