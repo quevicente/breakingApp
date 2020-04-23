@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E6Z-zQ-tSh">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="EGH-sY-6UJ">
+            <objects>
+                <navigationController id="E6Z-zQ-tSh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="PUp-oX-ysJ">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="x8B-jF-6p3" kind="relationship" relationship="rootViewController" id="MJr-Pv-NJn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mqE-MI-wXR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1571" y="136"/>
+        </scene>
+        <!--Conversas-->
+        <scene sceneID="qos-yh-oKk">
+            <objects>
+                <viewController id="x8B-jF-6p3" customClass="ViewController" customModule="breakingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vu5-8I-jml">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ncq-Tv-7PT">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="cCv-TX-z2C">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="9oT-8N-QhH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </searchBar>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rlh-Hh-2G0">
+                                            <rect key="frame" x="8" y="62" width="359" height="30"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lp-bU-NXY">
+                                                    <rect key="frame" x="0.0" y="0.0" width="179.66666666666666" height="30"/>
+                                                    <state key="normal" title="Listas de transmissão"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1BR-d4-mnh">
+                                                    <rect key="frame" x="179.66666666666663" y="0.0" width="179.33333333333337" height="30"/>
+                                                    <state key="normal" title="Novo grupo"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="QKy-YM-gQ5"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="rlh-Hh-2G0" secondAttribute="bottom" constant="8" id="4Sy-JO-3Ew"/>
+                                        <constraint firstItem="9oT-8N-QhH" firstAttribute="top" secondItem="cCv-TX-z2C" secondAttribute="top" symbolic="YES" id="7QG-JV-ahQ"/>
+                                        <constraint firstItem="9oT-8N-QhH" firstAttribute="leading" secondItem="cCv-TX-z2C" secondAttribute="leading" id="HId-VX-t7z"/>
+                                        <constraint firstItem="rlh-Hh-2G0" firstAttribute="leading" secondItem="cCv-TX-z2C" secondAttribute="leading" constant="8" id="Nf1-NW-9EL"/>
+                                        <constraint firstAttribute="trailing" secondItem="rlh-Hh-2G0" secondAttribute="trailing" constant="8" id="ObU-5e-y3V"/>
+                                        <constraint firstItem="rlh-Hh-2G0" firstAttribute="top" secondItem="9oT-8N-QhH" secondAttribute="bottom" constant="8" id="Z0K-Rr-tYe"/>
+                                        <constraint firstAttribute="trailing" secondItem="9oT-8N-QhH" secondAttribute="trailing" id="kWu-E5-vjS"/>
+                                    </constraints>
+                                </view>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ncq-Tv-7PT" firstAttribute="leading" secondItem="Bx9-fZ-UzH" secondAttribute="leading" id="CDW-XO-1X4"/>
+                            <constraint firstItem="Bx9-fZ-UzH" firstAttribute="trailing" secondItem="ncq-Tv-7PT" secondAttribute="trailing" id="NNP-mI-iGH"/>
+                            <constraint firstItem="ncq-Tv-7PT" firstAttribute="top" secondItem="Bx9-fZ-UzH" secondAttribute="top" id="WOA-wA-G5l"/>
+                            <constraint firstAttribute="bottom" secondItem="ncq-Tv-7PT" secondAttribute="bottom" id="YT7-QM-xTH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bx9-fZ-UzH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Conversas" id="pM4-6D-FzE">
+                        <barButtonItem key="leftBarButtonItem" title="Editar" id="YjW-Qu-pMa"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.pencil" catalog="system" id="xUX-Gl-nwq"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="buscarPersonagens" destination="9oT-8N-QhH" id="Xfg-u2-s5R"/>
+                        <outlet property="tablePersonagens" destination="ncq-Tv-7PT" id="0wG-TJ-nH1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xS5-Mf-K0p" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-623.20000000000005" y="135.96059113300493"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.and.pencil" catalog="system" width="64" height="58"/>
+    </resources>
+</document>

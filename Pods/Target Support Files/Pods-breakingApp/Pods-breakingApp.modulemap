@@ -1,0 +1,6 @@
+framework module Pods_breakingApp {
+  umbrella header "Pods-breakingApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
