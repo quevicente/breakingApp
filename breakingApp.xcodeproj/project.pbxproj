@@ -19,6 +19,7 @@
 		00E7BC3A2444DC1A009D38C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E7BC382444DC1A009D38C0 /* Main.storyboard */; };
 		00E7BC3C2444DC1B009D38C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E7BC3B2444DC1B009D38C0 /* Assets.xcassets */; };
 		00E7BC3F2444DC1B009D38C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E7BC3D2444DC1B009D38C0 /* LaunchScreen.storyboard */; };
+		00E9FCE324577CD800A2C039 /* Personagens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E9FCE224577CD800A2C039 /* Personagens.swift */; };
 		00F4A64E244A35B800608E81 /* Pods_breakingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85C619F8E51F46DD76125BAF /* Pods_breakingApp.framework */; };
 		00F4A64F244A35B800608E81 /* Pods_breakingApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 85C619F8E51F46DD76125BAF /* Pods_breakingApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		00E7BC3B2444DC1B009D38C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00E7BC3E2444DC1B009D38C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00E7BC402444DC1B009D38C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E9FCE224577CD800A2C039 /* Personagens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personagens.swift; sourceTree = "<group>"; };
 		00F4A645244A359800608E81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F4A646244A359800608E81 /* Cache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F4A647244A359800608E81 /* Imaginary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Imaginary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +110,7 @@
 				003CEBD12447B1A200450045 /* Quotes.swift */,
 				0023F38E244A2D48007BAA20 /* CelulaTableViewCell.swift */,
 				0023F38F244A2D48007BAA20 /* CelulaTableViewCell.xib */,
+				00E9FCE224577CD800A2C039 /* Personagens.swift */,
 			);
 			path = breakingApp;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E9FCE324577CD800A2C039 /* Personagens.swift in Sources */,
 				003CEBD22447B1A200450045 /* Quotes.swift in Sources */,
 				00E7BC372444DC1A009D38C0 /* ViewController.swift in Sources */,
 				00994D072444DD5600571A20 /* Service.swift in Sources */,
