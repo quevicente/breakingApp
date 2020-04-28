@@ -25,6 +25,7 @@ do catch, extension (muuuito mais organizado), delegates, datasource, UISearchBa
 
 Ps.: as mensagens são aleatórias da série; alguns personagens estão com quotes que não são deles
 Ps2.: a searchbar FUNCIONA!
+Ps3.: onde o campo fica "unknown" é que não há esse dado na API.
 
 [Referêrencia da API](https://breakingbadapi.com)
 
