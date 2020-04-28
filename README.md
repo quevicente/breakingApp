@@ -24,6 +24,7 @@ da classe no projeto.
 do catch, extension (muuuito mais organizado), delegates, datasource, UISearchBarDelegate com filtro das conversas.
 
 Ps.: as mensagens são aleatórias da série; alguns personagens estão com quotes que não são deles
+Ps2.: a searchbar FUNCIONA!
 
 [Referêrencia da API](https://breakingbadapi.com)
 
